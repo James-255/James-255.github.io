@@ -4,10 +4,6 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
     padding: 0;
 }
 
-#headfavicon {
-    border-radius: 100%;
-}
-
 /* Style the header */
 header {
     background-color: #333;
