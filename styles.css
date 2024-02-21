@@ -42,7 +42,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 
 .headerlogo {
-    max-width: 300px;
+    max-width: 400px;
     height: auto;
 }
 
@@ -81,7 +81,7 @@ nav ul li {
 }
 
 /* Media query for responsive design */
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
     .navbar {
         flex-direction: column;
         padding: 5px 0;
