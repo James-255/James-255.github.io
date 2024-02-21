@@ -4,39 +4,56 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
     padding: 0;
 }
 
-/* Style the header */
-header {
-    background-color: #333;
-    color: black;
-    padding: 20px 0;
-    
+* {
+    box-sizing: border-box;
 }
 
-/* Ensure content spans full width */
+/* Style the header */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+/*    background-color: #333;*/
+    padding: 5px 20px;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    gap: 20px;
+/*    z-index: 100;*/
+}
+
+/* Ensure content spans full width 
 .container {
     max-width: 1200px;
+    height: fit-content;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 100px;
     box-sizing: border-box;
-    border-width: 10px;
+    border-width: 0px;
     background-color: #fff;
+}*/
+
+.logodiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Style the logo */
-header h1 {
-    font-size: 0%;
-    display: inline;
+.headerlogo {
+    max-width: 300px;
+    height: auto;
 }
 
-#headerlogo {
-    border-radius: 100%;
-    max-width: 40px;
-}
-
-/* Style the navigation menu */
+/* Style the navigation menu 
 nav {
-    float: right;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+}*/
 
 nav ul {
     list-style: none;
@@ -45,23 +62,22 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin-left: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(120deg, pink, yellow);
+    border-radius: 10%;
+    border-right: 2px solid blue;
+    border-bottom: 2px solid blue;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 }
 
 /* Media query for responsive design */
-@media (max-width: 768px) {
-    header {
-        padding: 10px 0;
-    }
-
-    header h1 {
-        float: none;
-        text-align: center;
-        margin-bottom: 10px;
+@media (max-width: 1000px) {
+    .navbar {
+        padding: 5px 0;
     }
 
     nav {
