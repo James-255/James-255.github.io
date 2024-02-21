@@ -64,30 +64,33 @@ nav ul li {
     margin-left: 20px;
     padding: 10px 20px;
     background: linear-gradient(120deg, pink, yellow);
-    border-radius: 10%;
+    border-radius: 10px;
     border-right: 2px solid blue;
     border-bottom: 2px solid blue;
 }
 
-nav ul li a {
+
+
+.menu ul li a{
     color: #000000;
     text-decoration: none;
 }
 
-/* Media query for responsive design */
-@media (max-width: 1000px) {
-    .navbar {
-        padding: 5px 0;
-    }
+.menu ul li a:hover{
+    -webkit-text-stroke: medium;
+}
 
-    nav {
-        float: none;
-        text-align: center;
+/* Media query for responsive design */
+@media (max-width: 850px) {
+    .navbar {
+        flex-direction: column;
+        padding: 5px 0;
     }
 
     nav ul li {
         display: block;
         margin: 0;
         margin-bottom: 10px;
+        text-align: center;
     }
 }
